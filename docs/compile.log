@@ -1,0 +1,16 @@
+
+> arbor-cuda-tree@0.1.0 build
+> node tools/compile.mjs
+
+OK growTree / 20186 WGSL bytes / 1 buffers
+OK makePrimitives / 29971 WGSL bytes / 2 buffers
+OK makeKeys / 13811 WGSL bytes / 3 buffers
+OK sortPass / 10599 WGSL bytes / 2 buffers
+OK makeBounds / 13952 WGSL bytes / 3 buffers
+OK reduceBounds / 11667 WGSL bytes / 1 buffers
+OK initCamera / 13928 WGSL bytes / 2 buffers
+OK updateCamera / 20785 WGSL bytes / 3 buffers
+OK tracePixels / 54353 WGSL bytes / 5 buffers
+OK shadePixels / 82153 WGSL bytes / 7 buffers
+OK filterLighting / 33795 WGSL bytes / 5 buffers
+OK resolvePixels / 33138 WGSL bytes / 4 buffers

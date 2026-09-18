@@ -1,0 +1,235 @@
+[
+  {
+    "entry": "growTree",
+    "file": "tree",
+    "workgroupSize": [
+      64,
+      1,
+      1
+    ],
+    "dependencies": [
+      "common",
+      "tree"
+    ],
+    "bindings": [
+      "B"
+    ]
+  },
+  {
+    "entry": "makePrimitives",
+    "file": "tree",
+    "workgroupSize": [
+      64,
+      1,
+      1
+    ],
+    "dependencies": [
+      "common",
+      "tree"
+    ],
+    "bindings": [
+      "B",
+      "P"
+    ]
+  },
+  {
+    "entry": "makeKeys",
+    "file": "cache",
+    "workgroupSize": [
+      128,
+      1,
+      1
+    ],
+    "dependencies": [
+      "common",
+      "tree",
+      "cache"
+    ],
+    "bindings": [
+      "P",
+      "Keys",
+      "Order"
+    ]
+  },
+  {
+    "entry": "sortPass",
+    "file": "cache",
+    "workgroupSize": [
+      128,
+      1,
+      1
+    ],
+    "dependencies": [
+      "common",
+      "tree",
+      "cache"
+    ],
+    "bindings": [
+      "Keys",
+      "Order"
+    ]
+  },
+  {
+    "entry": "makeBounds",
+    "file": "cache",
+    "workgroupSize": [
+      128,
+      1,
+      1
+    ],
+    "dependencies": [
+      "common",
+      "tree",
+      "cache"
+    ],
+    "bindings": [
+      "P",
+      "Order",
+      "Nodes"
+    ]
+  },
+  {
+    "entry": "reduceBounds",
+    "file": "cache",
+    "workgroupSize": [
+      128,
+      1,
+      1
+    ],
+    "dependencies": [
+      "common",
+      "tree",
+      "cache"
+    ],
+    "bindings": [
+      "Nodes"
+    ]
+  },
+  {
+    "entry": "initCamera",
+    "file": "camera",
+    "workgroupSize": [
+      1,
+      1,
+      1
+    ],
+    "dependencies": [
+      "common",
+      "camera"
+    ],
+    "bindings": [
+      "C",
+      "P"
+    ]
+  },
+  {
+    "entry": "updateCamera",
+    "file": "camera",
+    "workgroupSize": [
+      1,
+      1,
+      1
+    ],
+    "dependencies": [
+      "common",
+      "camera"
+    ],
+    "bindings": [
+      "C",
+      "I",
+      "P"
+    ]
+  },
+  {
+    "entry": "tracePixels",
+    "file": "trace",
+    "workgroupSize": [
+      8,
+      8,
+      1
+    ],
+    "dependencies": [
+      "common",
+      "tree",
+      "surface",
+      "trace"
+    ],
+    "bindings": [
+      "P",
+      "Nodes",
+      "Order",
+      "C",
+      "Hit"
+    ]
+  },
+  {
+    "entry": "shadePixels",
+    "file": "shade",
+    "workgroupSize": [
+      8,
+      8,
+      1
+    ],
+    "dependencies": [
+      "common",
+      "tree",
+      "surface",
+      "trace",
+      "shade"
+    ],
+    "bindings": [
+      "P",
+      "Nodes",
+      "Order",
+      "C",
+      "Hit",
+      "Linear",
+      "Guide"
+    ]
+  },
+  {
+    "entry": "filterLighting",
+    "file": "shade",
+    "workgroupSize": [
+      8,
+      8,
+      1
+    ],
+    "dependencies": [
+      "common",
+      "tree",
+      "surface",
+      "trace",
+      "shade"
+    ],
+    "bindings": [
+      "Linear",
+      "Guide",
+      "Hit",
+      "Filtered",
+      "C"
+    ]
+  },
+  {
+    "entry": "resolvePixels",
+    "file": "shade",
+    "workgroupSize": [
+      8,
+      8,
+      1
+    ],
+    "dependencies": [
+      "common",
+      "tree",
+      "surface",
+      "trace",
+      "shade"
+    ],
+    "bindings": [
+      "Filtered",
+      "History",
+      "Pixels",
+      "C"
+    ]
+  }
+]

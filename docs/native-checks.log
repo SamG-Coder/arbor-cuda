@@ -1,0 +1,18 @@
+SCENE 2109 curves / 5124 woody segments / 24192 leaves / 96 stones
+BOUNDS -5.50279,-0.832,-5.30197 to 5.40578,11.2203,5.22893
+PASS generated primitive values finite
+PASS exact fixed geometry counts
+PASS BVH root includes all active objects
+PASS BVH child boxes contained by every parent
+PASS camera changes never regenerate or replace topology
+PASS ten-second approach reaches close-up without touching tree geometry
+PASS different seed changes layout but preserves topology counts
+PASS bitonic kernel stages equal independent std::sort
+BVH max t error 0
+PASS 100 BVH rays match exhaustive intersections
+PASS continuous footprint weights bounded, finite and monotone
+CONTINUITY max relief increment across 10000 log-spaced footprints 7.73836e-06 metres
+PASS no discrete bark-displacement jump in footprint sweep
+PASS same 50 leaf IDs intersect near and far without alpha fade
+PASS rendered HDR frame finite and nonnegative
+ALL NATIVE CHECKS PASSED (CPU execution; not a hardware-GPU benchmark)

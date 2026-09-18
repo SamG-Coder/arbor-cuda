@@ -1,0 +1,44 @@
+
+> arbor-cuda-tree@0.1.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: all 12 CUDA entry points reproduce the shipped shader artifacts
+ok 1 - all 12 CUDA entry points reproduce the shipped shader artifacts
+  ---
+  duration_ms: 1189.487006
+  type: 'test'
+  ...
+# Subtest: host ABI and source geometry capacities agree
+ok 2 - host ABI and source geometry capacities agree
+  ---
+  duration_ms: 0.759115
+  type: 'test'
+  ...
+# Subtest: host allocation, complete generation, frame and resize contract (device double, NOT GPU arithmetic)
+ok 3 - host allocation, complete generation, frame and resize contract (device double, NOT GPU arithmetic)
+  ---
+  duration_ms: 63.62381
+  type: 'test'
+  ...
+# Subtest: generation is outside the frame loop; no distance-based topology or alpha foliage
+ok 4 - generation is outside the frame loop; no distance-based topology or alpha foliage
+  ---
+  duration_ms: 7.464381
+  type: 'test'
+  ...
+# Subtest: server and static build entry files exist; no remote runtime assets
+ok 5 - server and static build entry files exist; no remote runtime assets
+  ---
+  duration_ms: 4.445812
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1423.347142

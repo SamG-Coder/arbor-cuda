@@ -1,0 +1,35 @@
+{
+  "project": "ARBOR",
+  "version": "0.1.0",
+  "source_sha256": "fb8fa692a3ee93c3a3f558805e3c84c4c0dd67d1c47e6046b1de477d5ce18973",
+  "compiled_entries": 12,
+  "node_test_groups_passed": 5,
+  "cpu_reference_checks_passed": true,
+  "bvh_exhaustive_rays": 100,
+  "bitonic_sort_matches_independent_sort": true,
+  "camera_approach_preserves_geometry": true,
+  "footprint_sweep_samples": 10000,
+  "largest_tested_relief_increment_metres": 7.73836e-06,
+  "stable_leaf_ray_checks": 50,
+  "cpu_render_previews": {
+    "tree": [
+      900,
+      900,
+      4
+    ],
+    "bark": [
+      640,
+      480,
+      2
+    ],
+    "leaf": [
+      640,
+      480,
+      2
+    ]
+  },
+  "browser_gpu_verified": false,
+  "hardware_frame_rate_claimed": false,
+  "browser_validation_limitation": "Chromium navigation blocked in this environment; no hardware-GPU execution result. Run tests/browser.html locally.",
+  "source_note": "Ray marcher and leaf Newton solver are bounded numerical approximations; tests are not a proof of alias-free rendering."
+}
