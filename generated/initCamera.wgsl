@@ -292,7 +292,7 @@ fn main(
   b_C[13i] = 0.63f;
   b_C[14i] = 0.9f;
   b_C[20i] = 1.18f;
-  b_C[22i] = 0.0f;
+  b_C[22i] = 1.0f;
   b_C[23i] = 1.0f;
   b_C[31i] = f32(cw_params.p_seed);
   b_C[44i] = 1.0f;
